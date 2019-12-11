@@ -8,7 +8,7 @@ export default function TeamMember({name, email, role}) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background: lightorange;
+        background: orange;
     `;
 
     return (
