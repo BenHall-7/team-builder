@@ -5,6 +5,7 @@ export default function TeamMember({name, email, role}) {
     let Wrapper = styled.div`
         width: 200px;
         padding: 20px;
+        margin: 10px 10px;
         background: orange;
     `;
 

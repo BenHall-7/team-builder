@@ -3,8 +3,16 @@ import styled from 'styled-components';
 import TeamMember from './TeamMember';
 
 const StyledForm = styled.form`
+    width: 100%;
+    padding: 20px 40px;
+    background: tan;
+    text-align: center;
+
     label, input {
         display: block;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 10px;
     }
 `;
 

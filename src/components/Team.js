@@ -7,12 +7,17 @@ export default function Team({team}) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 0 50px;
+        justify-content: center;
+        padding: 10px 10px;
     `;
 
-    return (
-        <Wrapper>
-            {team.map(member => <TeamMember {...member} />)}
-        </Wrapper>
-    )
+    if (team.length > 0) {
+        return (
+            <Wrapper>
+                {team.map(member => <TeamMember {...member} />)}
+            </Wrapper>
+        )
+    } else {
+        return null;
+    }
 }
