@@ -4,8 +4,10 @@ import TeamMember from './TeamMember';
 
 export default function Team({team}) {
     let Wrapper = styled.div`
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         padding: 0 50px;
-        border; 1px dashed black;
     `;
 
     return (

@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import TeamMember from './TeamMember';
 
+const StyledForm = styled.form`
+    label, input {
+        display: block;
+    }
+`;
+
 export default function Form({addTeamMember}) {
     const [teamMember, setTeamMember] = useState({
         name: "",
         email: "",
         role: "",
     });
-
-    // const Form = styled.form`
-    //     label, input {
-    //         display: block;
-    //     }
-    // `;
 
     const handleChange = event => {
         let target = event.target;
@@ -37,11 +37,11 @@ export default function Form({addTeamMember}) {
     const RoleLabel = newLabel({key: "role", title: "Role: "});
 
     return (
-        <form onSubmit={handleSubmit}>
+        <StyledForm onSubmit={handleSubmit}>
             {NameLabel}
             {EmailLabel}
             {RoleLabel}
             <button>Submit</button>
-        </form>
+        </StyledForm>
     )
 }
